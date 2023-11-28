@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Pedido de pizza</h1>
+    <form>
+        <fieldset>
+            <legend>La pizzza</legend>
+            <p>
+                Ingredientes
+                <br>
+                <br>
+                <input type="checkbox">Queso
+                <br>
+                <input type="checkbox">Pimiento
+                <br>
+                <input type="checkbox">Cebolla
+                <br>
+                <br>
+                Tamaño
+                <br>
+                <br>
+                <input type="checkbox">Pequeña
+                <br>
+                <input type="checkbox">Mediana
+                <br>
+                <input type="checkbox">Grande
+            </p>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Datos de entrega</legend>
+            <p>
+                Nombre: <input type="text" maxlength="50">
+                <br><br>
+                Dirección: <input type="text" maxlength="256"><br><br>
+                Teléfono: <input type="text" maxlength="50"><br><br>
+                Intrucciones especiales<br>
+                <textarea></textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Metodo de pago</legend>
+            <select name="pago">
+                <option >Efectivo</option>
+                <option> Tarjeta</option>
+                <option> Bizum</option>
+                <option>Paypal</option>
+            </select>
+        </fieldset>
+        <input type="submit" value="Ok">
+    </form>
+</body>
+</html>

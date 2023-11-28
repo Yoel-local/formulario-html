@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+        <p>
+            Nombre : <input type="text" maxlength="50">
+            <br><br>
+            Apellido : <input type="text" maxlength="50">
+            <br><br>
+            Telefono : <input type="text" maxlength="30">
+            <br><br>
+            Correo electronico : <input type="email" maxlength="50">
+        </p>
+    </fieldset>
+    <fieldset>
+        <legend>Datos de la cita</legend>
+        <p>
+            Fecha y hora: <input type="datetime-local"><br><br>
+            especialistas : <select name="especialistas">
+                <option>Dr. Perez Olmedo Miguel Angel</option>
+                <option>Dra. Gomez Aguado Maria </option>
+                <option>Dr. Perez Ruiz Veronica</option>
+            </select>
+            <br><br>
+            ¿Has venido antes? <input type="radio">No <input type="radio">Si
+        </p>
+        </fieldset>
+        <br>
+        <p>
+            Comentarios adicionales: <textarea></textarea>
+        </p>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
