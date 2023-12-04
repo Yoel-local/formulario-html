@@ -6,15 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
+    <form action="alanjoelt43@gmail.com" method="post" enctype="text/plain">
         <p>
-            Nombre:<input type="text" name="Nombre" placeholder="Escribe tu nombre">
+            Nombre:<input type="text" name="Nombre" placeholder="Escribe tu nombre" maxlength="30">
             <br>
             <br>
-            Email: <input type="email" name="email" placeholder="correo@empresa.com">
+            Apellido:<input type="text" name="Apellido" placeholder="Escribe tu apellido" maxlength="30">
             <br>
             <br>
-            Asunto <select name="asuntos"> 
+            Email: <input type="email" name="email" placeholder="correo@empresa.com" required>
+            <br>
+            <br>
+            Asunto <select name="asuntos" size="3"> 
                 <option>Pedir presupuesto web</option>
                 <option>Solicitud de Trabajo</option>
                 <option>Sugerencia</option>
@@ -24,15 +27,13 @@
             ¿Como  nos ha conocido? <input type="checkbox">Un amigo <input type="checkbox"> Google <input type="checkbox">buzoneo <input type="checkbox">Otros
             <br>
             <br>
-            Mensaje:<textarea rows="4" cols="20"></textarea><br>
-            <input type="checkbox">He leido y acepto el aviso legal y la politica de privacidad.
+            Mensaje:<textarea rows="4" cols="20" maxlength="300"></textarea><br>
+            <input type="checkbox" required>He leido y acepto el <a href="" >aviso legal y la politica de privacidad.</a>
             <br>
             <br>
-            @FrancesRicart
-            
+            @Alan
         </p>
-        
-    </form>
-    
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
 </body>
 </html>
